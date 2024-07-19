@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --font: "Balsamiq Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-color: lightblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first>p{
+    font-size: 35px;
+    color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-family: var(--font);
+    text-shadow: 3px 3px 5px blue;
+}
+
+.second{
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+
+.num{
+    font-family: var(--font);
+    font-size: 30px;
+    font-weight: 700;
+    color: burlywood;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover{
+    scale: 0.8;
+    box-shadow: 5px 5px 5px 5px lightcoral;
+}
+
+.btn>i{
+    font-size: 18px;
+    color: brown;
+}
+
+@media screen and (max-width:425px) {
+    .first>p{
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .first>p{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .first>p{
+        font-size:25px;
+    }
+}
